@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 import os
 
-TOKEN = os.getenv"8355095390:AAEyGFlJJM4GGCDiK6O2bpwK7i3QozhMG3Q"
+TOKEN = os.getenv("BOT_TOKEN")
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if context.args:
         movie = context.args[0]
